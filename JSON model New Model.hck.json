@@ -623,15 +623,16 @@
     "creationTS": "2024-01-13T15:32:19.186Z",
     "GUID": "70268b42-1a69-4db6-9691-d29f8193462b",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-01-13T20:47:23.886Z",
+    "lastModifTS": "2024-01-13T21:27:04.627Z",
     "persistenceSchemaVersion": "7",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "7.0.7"
+        "version": "7.1.0"
     },
+    "hackoladeMeta": {},
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -668,7 +669,11 @@
                     "decorativeSymbols": []
                 },
                 "buckets": [],
-                "collapsedNodes": [],
+                "collapsedNodes": [
+                    "440abab9-efd9-43d7-85bd-557cb872b77d1118cb0b-9439-4021-9264-22a16064982f",
+                    "440abab9-efd9-43d7-85bd-557cb872b77dbec37198-3067-4fab-98d9-45d969a77bfa32b409c5-d649-4461-9a47-69556d804769",
+                    "440abab9-efd9-43d7-85bd-557cb872b77dbec37198-3067-4fab-98d9-45d969a77bfa"
+                ],
                 "activeRelationship": "",
                 "activeRelationshipFields": {
                     "childField": [],

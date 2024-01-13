@@ -3,11 +3,11 @@ Query #1
 
 > db.cliente.insertOne(
 	{
+		Cliente_ID: 54548546,
 		Nombre: "Radhika",
 		Apellido: "Sharma",
-		Cliente_ID: 54548546,
-		E_mail: "radhika_sharma.123@gmail.com",
 		Direccion: "av meridiana 186, barcelona",
+		E_mail: "radhika_sharma.123@gmail.com",
 		Contraseña: "fet453tfwer"
 	})
 	
@@ -69,11 +69,11 @@ Query #6
     
 > db.transportista.insertOne(
 	{
+		Transportista_id: 45657846,
 		Nombre: "Sebastian",
 		Apellido: "Forero",
-		id_Transportista: 45657846,
-		E_mail: "sebas_forero.123@gmail.com",
 		Direccion: "av diagonal 186, barcelona",
+		E_mail: "sebas_forero.123@gmail.com",
 		Contraseña: "ui4ndf53tfwer",
 		Vehiculo: "Camion",
 		Tarifas: [],
@@ -90,7 +90,7 @@ Query #7
 	El transportista puede modificar sus datos:
 
 > db.transportista.updateOne(
-    {id_Transportista: 45657846},
+    {Transportista_id: 45657846},
     {$set: {"E_mail": "sebastian123@gmail.com"}}
 )
 
@@ -105,7 +105,7 @@ Query #8
 	El transportista puede darse de baja de la aplicación:
 
 > db.transportista.deleteOne(
-    {id_Transportista: 45657846},
+    {Transportista_id: 45657846},
 )
 
 output ->
@@ -118,7 +118,7 @@ Querry #9
 	El transportista puede ver los servicios a realizar:
 
 > db.servicios.find(
-	{id_Transportista: 45657846}
+	{Transportista_id: 45657846}
 )
 
 output ->
