@@ -6,13 +6,14 @@
             "type": "object",
             "properties": [
                 {
+                    "name": "id_transportista",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "integer",
+                    "type": "string",
                     "properties": [],
-                    "GUID": "3ab4a0e1-b93c-448a-9845-0f9b96775b6c",
-                    "name": "id_transportista",
+                    "color": "#555555",
                     "error": {},
+                    "GUID": "3ab4a0e1-b93c-448a-9845-0f9b96775b6c",
                     "childRelationships": [
                         "916a2497-0b46-42fc-b630-d81aa07f5171"
                     ]
@@ -39,18 +40,60 @@
                     "name": "Direccion",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "string",
-                    "properties": [],
-                    "GUID": "185be19b-246b-4715-9ede-cac3354264e4",
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "Calle",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "properties": [],
+                            "GUID": "9b1e60da-57a0-430c-9d1b-0554cd00e952",
+                            "error": {}
+                        },
+                        {
+                            "name": "Numero",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "integer",
+                            "properties": [],
+                            "error": {},
+                            "GUID": "17c0f17a-ceb0-4935-b45b-aaaa47b32f18"
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "properties": [],
+                            "color": "#555555",
+                            "GUID": "709e3a44-36d7-4e22-853e-be9698f4b372",
+                            "name": "Ciudad",
+                            "error": {}
+                        },
+                        {
+                            "name": "Codigo Postal",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "integer",
+                            "properties": [],
+                            "error": {},
+                            "GUID": "fea6a2b8-1b35-4959-a105-20d1750240a8"
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "d7200e33-90fe-4be7-a24f-aee4388a9241",
+                    "foreignCollection": "",
+                    "foreignField": [],
                     "error": {}
                 },
                 {
+                    "name": "email",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "string",
                     "properties": [],
-                    "GUID": "0b04a5b7-c3de-4843-9842-d8fdeb804838",
-                    "name": "DNI",
+                    "GUID": "398b56fc-57f0-4d1c-8330-80249faa4244",
+                    "format": "email",
                     "error": {}
                 },
                 {
@@ -59,7 +102,7 @@
                     "type": "string",
                     "properties": [],
                     "GUID": "d691a902-59e2-4239-8bcb-1c139fab1d41",
-                    "name": "Password",
+                    "name": "Contraseña",
                     "error": {}
                 },
                 {
@@ -121,16 +164,6 @@
                     "error": {}
                 },
                 {
-                    "name": "e-mail",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "string",
-                    "properties": [],
-                    "GUID": "398b56fc-57f0-4d1c-8330-80249faa4244",
-                    "format": "email",
-                    "error": {}
-                },
-                {
                     "name": "Zonas",
                     "hackoladeMeta": {},
                     "isActivated": true,
@@ -148,6 +181,185 @@
                     ],
                     "additionalItems": true,
                     "GUID": "1118cb0b-9439-4021-9264-22a16064982f",
+                    "error": {}
+                },
+                {
+                    "name": "Valoraciones",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "Valoración",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "integer",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "error": {},
+                                    "GUID": "4f67235b-04d0-4e67-8844-f8e52e7bdfd2"
+                                },
+                                {
+                                    "name": "Fecha",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "GUID": "a1c29b01-91ae-46d4-99f2-4ccd75790e40",
+                                    "format": "date",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Comentario",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "GUID": "0201a07a-79d9-427f-a942-03cbb4553d78",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "color": "#555555",
+                            "error": {},
+                            "GUID": "13a533bf-0b29-4163-9269-1c874b0db889",
+                            "arrayItem": true
+                        }
+                    ],
+                    "additionalItems": true,
+                    "color": "#555555",
+                    "error": {},
+                    "GUID": "a0493b69-5cc0-40d6-af13-5d126b7c0989"
+                },
+                {
+                    "name": "Tarifas",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "properties": [],
+                            "color": "#555555",
+                            "error": {},
+                            "GUID": "47598115-58c5-41fc-afa3-5a7fff82b2ee",
+                            "arrayItem": true,
+                            "displayName": "Camión"
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "properties": [],
+                            "color": "#555555",
+                            "error": {},
+                            "GUID": "8fde38b4-dc11-4d42-88ff-0cb3ceaf3df3",
+                            "arrayItem": true,
+                            "displayName": "Furgoneta"
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "properties": [],
+                            "color": "#555555",
+                            "error": {},
+                            "GUID": "3b2d7b61-5c59-4e62-9990-47634a9e8c5d",
+                            "arrayItem": true,
+                            "displayName": "coche"
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "Ayudantes",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "properties": [],
+                                    "error": {},
+                                    "GUID": "37ccb778-738d-4e04-8842-c078e7f9e5ed"
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "properties": [],
+                                    "GUID": "2ab7bc1f-0288-484e-b803-0904765a34ce",
+                                    "name": "Carretilla",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "GUID": "ab37423b-8714-4d97-9548-18ff1d28f8ce",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "displayName": "Extras",
+                            "arrayItem": true,
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "587d6ad0-e986-4296-a3bc-b6c51a31389d",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                },
+                {
+                    "name": "Metodo de cobro",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "Nombre del titular",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "GUID": "59125b08-7423-436e-8103-60a0a941c358",
+                                    "error": {}
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "GUID": "292c5315-57d0-44fc-889b-452e746bcf6d",
+                                    "name": "IBAN",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "color": "#555555",
+                            "GUID": "619942c5-8d51-4cac-a7d8-2fee4cc2c2d5",
+                            "name": "Cuenta corriente",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "color": "#555555",
+                    "GUID": "ea1e6b50-6612-4f0a-8cac-1a9680840e2a",
+                    "foreignCollection": "",
+                    "foreignField": [],
                     "error": {}
                 }
             ],
@@ -177,33 +389,25 @@
                     "name": "id_cliente",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "integer",
+                    "type": "string",
                     "properties": [],
+                    "color": "#555555",
                     "error": {},
                     "GUID": "2a43af68-c56d-4e7d-8221-50e750fc0682",
-                    "relationshipType": "Foreign Key",
-                    "foreignCollection": "19bc584b-11d8-4ca9-82d3-5c089695a4aa",
-                    "foreignField": [
-                        "19bc584b-11d8-4ca9-82d3-5c089695a4aa",
-                        "a8062631-c166-4ac0-968f-2b0679f1e5a3"
-                    ],
-                    "parentRelationship": "5a7c7e7c-096e-4bda-83b5-776d6325b2df"
+                    "parentRelationship": "5a7c7e7c-096e-4bda-83b5-776d6325b2df",
+                    "relationshipType": "Foreign Key"
                 },
                 {
                     "name": "id_transportista",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "integer",
+                    "type": "string",
                     "properties": [],
+                    "color": "#555555",
                     "error": {},
                     "GUID": "d14f243c-e090-45f3-9b54-2ce1d684793d",
-                    "relationshipType": "Foreign Key",
-                    "foreignCollection": "440abab9-efd9-43d7-85bd-557cb872b77d",
-                    "foreignField": [
-                        "440abab9-efd9-43d7-85bd-557cb872b77d",
-                        "3ab4a0e1-b93c-448a-9845-0f9b96775b6c"
-                    ],
-                    "parentRelationship": "916a2497-0b46-42fc-b630-d81aa07f5171"
+                    "parentRelationship": "916a2497-0b46-42fc-b630-d81aa07f5171",
+                    "relationshipType": "Foreign Key"
                 },
                 {
                     "hackoladeMeta": {},
@@ -239,7 +443,7 @@
                     "type": "string",
                     "properties": [],
                     "GUID": "ce666f6a-8306-4643-942e-fbebbc1e5c92",
-                    "format": "date-time",
+                    "format": "date",
                     "error": {}
                 },
                 {
@@ -258,22 +462,24 @@
                     "type": "document",
                     "properties": [
                         {
-                            "name": "Ayudantes",
+                            "name": "Nº ayudantes",
                             "hackoladeMeta": {},
                             "isActivated": true,
-                            "type": "numeric",
+                            "type": "integer",
                             "properties": [],
+                            "color": "#555555",
                             "error": {},
                             "GUID": "e5027d65-2c17-40d2-bfa6-61dbe6eab37e"
                         },
                         {
+                            "name": "Nº carretilla",
                             "hackoladeMeta": {},
                             "isActivated": true,
-                            "type": "numeric",
+                            "type": "integer",
                             "properties": [],
-                            "GUID": "03304e6a-bb8a-4184-8906-52ed5924200c",
-                            "name": "Carretilla",
-                            "error": {}
+                            "color": "#555555",
+                            "error": {},
+                            "GUID": "03304e6a-bb8a-4184-8906-52ed5924200c"
                         }
                     ],
                     "additionalProperties": false,
@@ -344,13 +550,14 @@
             "type": "object",
             "properties": [
                 {
+                    "name": "id_cliente",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "integer",
+                    "type": "string",
                     "properties": [],
-                    "GUID": "a8062631-c166-4ac0-968f-2b0679f1e5a3",
-                    "name": "id_cliente",
+                    "color": "#555555",
                     "error": {},
+                    "GUID": "a8062631-c166-4ac0-968f-2b0679f1e5a3",
                     "childRelationships": [
                         "5a7c7e7c-096e-4bda-83b5-776d6325b2df"
                     ]
@@ -398,6 +605,16 @@
                             "GUID": "a0e3557b-310a-4b81-a50a-a7ceccc82ab9"
                         },
                         {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "properties": [],
+                            "color": "#555555",
+                            "GUID": "e40af717-b90b-4030-a392-bd0f00f977ee",
+                            "name": "Ciudad",
+                            "error": {}
+                        },
+                        {
                             "name": "Codigo Postal",
                             "hackoladeMeta": {},
                             "isActivated": true,
@@ -412,12 +629,13 @@
                     "GUID": "dfe1da3d-761d-42e2-b032-aeb353183e05"
                 },
                 {
+                    "name": "email",
                     "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "string",
                     "properties": [],
-                    "GUID": "1a2aba09-e9df-401e-99fa-03890cdcf478",
-                    "name": "DNI",
+                    "GUID": "c0234ea9-2e50-493a-96b3-7bd49c99cd4b",
+                    "format": "email",
                     "error": {}
                 },
                 {
@@ -426,18 +644,95 @@
                     "type": "string",
                     "properties": [],
                     "GUID": "ec11f8be-b1f5-4e56-a11a-fea376ac705e",
-                    "name": "Password",
+                    "name": "Contraseña",
                     "error": {}
                 },
                 {
-                    "name": "e-mail",
+                    "name": "Metodo de pago",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "string",
-                    "properties": [],
-                    "GUID": "c0234ea9-2e50-493a-96b3-7bd49c99cd4b",
-                    "format": "email",
-                    "error": {}
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "Targeta",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "Nombre del titular",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "GUID": "021ff525-1dab-4da9-94da-58944f1b8ff6",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Numero de la targeta",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "GUID": "444deafe-4412-4ebd-84cf-206d5435111f",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Fecha de vencimiento",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "GUID": "d0826c91-fd3c-418f-9e5b-455d907d4dad",
+                                    "format": "date",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "CVN",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "integer",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "error": {},
+                                    "GUID": "53d5b614-c26e-4ba2-b82f-6c54e77c0815"
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "color": "#555555",
+                            "GUID": "4c26690a-41ad-4572-8041-201280ed5dce",
+                            "error": {}
+                        },
+                        {
+                            "name": "PayPal",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "properties": [],
+                                    "color": "#555555",
+                                    "GUID": "0eeba038-663d-40eb-940c-e327def5483b",
+                                    "name": "email",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "color": "#555555",
+                            "error": {},
+                            "GUID": "a3a068c6-31ac-44db-a699-0eaaf4909dbf"
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "color": "#555555",
+                    "error": {},
+                    "GUID": "bf6ecf7a-32ec-4e94-9af9-c10f6874bf28"
                 }
             ],
             "definitions": {
@@ -484,20 +779,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1659.1254763785112,
-                        "y": 590.8652402822025
+                        "x": 1696.5861262821934,
+                        "y": 1272.722355152528
                     },
                     {
-                        "x": 1715.3726181074474,
-                        "y": 590.8652402822025
+                        "x": 1834.1841707313417,
+                        "y": 1272.722355152528
                     },
                     {
-                        "x": 1715.3726181074474,
-                        "y": 473.74315857014346
+                        "x": 1834.1841707313417,
+                        "y": 1278.2902263619342
                     },
                     {
-                        "x": 1767.8177631978629,
-                        "y": 473.74315857014346
+                        "x": 1849.168665918075,
+                        "y": 1278.2902263619342
                     }
                 ],
                 "sides": [
@@ -536,20 +831,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1378.1254763785112,
-                        "y": 607.5348355613872
+                        "x": 1413.5861262821934,
+                        "y": 1294.2941208192133
                     },
                     {
-                        "x": 1334.7294980053864,
-                        "y": 607.5348355613872
+                        "y": 1294.2941208192133,
+                        "x": 1352.5240323005244
                     },
                     {
-                        "x": 1334.7294980053864,
-                        "y": 578.9708571385574
+                        "y": 1283.6654189764363,
+                        "x": 1352.5240323005244
                     },
                     {
-                        "x": 1295.8740781240515,
-                        "y": 578.9708571385574
+                        "x": 1293.7141502593627,
+                        "y": 1283.6654189764363
                     }
                 ],
                 "sides": [
@@ -567,19 +862,16 @@
         "3ab4a0e1-b93c-448a-9845-0f9b96775b6c": "id_transportista",
         "0e40adda-af34-4262-8e9c-783ad523f32e": "Nombre",
         "aa198fa2-3dff-4a44-a9bd-df355b911dc7": "Apellido",
-        "0b04a5b7-c3de-4843-9842-d8fdeb804838": "DNI",
-        "d691a902-59e2-4239-8bcb-1c139fab1d41": "Password",
+        "d691a902-59e2-4239-8bcb-1c139fab1d41": "Contraseña",
         "bec37198-3067-4fab-98d9-45d969a77bfa": "Vehiculo",
-        "185be19b-246b-4715-9ede-cac3354264e4": "Direccion",
-        "398b56fc-57f0-4d1c-8330-80249faa4244": "e-mail",
         "1118cb0b-9439-4021-9264-22a16064982f": "Zonas",
         "63d9d35c-943b-419c-a91d-0e3be17bbccc": "Dirección de recogida",
         "f9ec484f-e305-4811-83b2-d7894a916d09": "Dirección de entrega",
         "ce666f6a-8306-4643-942e-fbebbc1e5c92": "Fecha",
         "954cbe12-096b-4aa2-a654-0508a81b7302": "Pasajeros",
         "71879973-9b16-40b6-b49b-f7ed3a5d5ae1": "Extras de servicio",
-        "e5027d65-2c17-40d2-bfa6-61dbe6eab37e": "Ayudantes",
-        "03304e6a-bb8a-4184-8906-52ed5924200c": "Carretilla",
+        "e5027d65-2c17-40d2-bfa6-61dbe6eab37e": "Nº ayudantes",
+        "03304e6a-bb8a-4184-8906-52ed5924200c": "Nº carretilla",
         "16448720-35d3-48e4-8467-cc9a150e66c2": "Precio del servició",
         "5628eea1-a900-487b-98aa-f7056f7d7d8c": "Capacidad de carga",
         "908d8d08-761a-439d-af3b-e381016530be": "id_servició",
@@ -588,9 +880,7 @@
         "1cf958c7-8f2e-41b6-a789-c90e53a54d3c": "Nombre",
         "97c3a794-fce0-4e4b-b82c-0bcdb1d0c9f6": "Apellido",
         "dfe1da3d-761d-42e2-b032-aeb353183e05": "Direccion",
-        "1a2aba09-e9df-401e-99fa-03890cdcf478": "DNI",
-        "ec11f8be-b1f5-4e56-a11a-fea376ac705e": "Password",
-        "c0234ea9-2e50-493a-96b3-7bd49c99cd4b": "e-mail",
+        "ec11f8be-b1f5-4e56-a11a-fea376ac705e": "Contraseña",
         "2a43af68-c56d-4e7d-8221-50e750fc0682": "id_cliente",
         "d14f243c-e090-45f3-9b54-2ce1d684793d": "id_transportista",
         "222f2077-f1d1-4957-bedc-b7ff1cb46623": "Estado del servicio",
@@ -598,7 +888,28 @@
         "916a2497-0b46-42fc-b630-d81aa07f5171": "fk SERVICIO.id_transportista to TRANSPORTISTA.id_transportista",
         "2b7343f4-418b-44be-b191-66729ccb86e7": "Calle",
         "a0e3557b-310a-4b81-a50a-a7ceccc82ab9": "Numero",
-        "0b5d9cb4-1496-4dbf-bdeb-7ed67db93c3a": "Codigo Postal"
+        "0b5d9cb4-1496-4dbf-bdeb-7ed67db93c3a": "Codigo Postal",
+        "c0234ea9-2e50-493a-96b3-7bd49c99cd4b": "email",
+        "e40af717-b90b-4030-a392-bd0f00f977ee": "Ciudad",
+        "bf6ecf7a-32ec-4e94-9af9-c10f6874bf28": "Metodo de pago",
+        "4c26690a-41ad-4572-8041-201280ed5dce": "Targeta",
+        "444deafe-4412-4ebd-84cf-206d5435111f": "Numero de la targeta",
+        "021ff525-1dab-4da9-94da-58944f1b8ff6": "Nombre del titular",
+        "d0826c91-fd3c-418f-9e5b-455d907d4dad": "Fecha de vencimiento",
+        "53d5b614-c26e-4ba2-b82f-6c54e77c0815": "CVN",
+        "a3a068c6-31ac-44db-a699-0eaaf4909dbf": "PayPal",
+        "0eeba038-663d-40eb-940c-e327def5483b": "email",
+        "a0493b69-5cc0-40d6-af13-5d126b7c0989": "Valoraciones",
+        "4f67235b-04d0-4e67-8844-f8e52e7bdfd2": "Valoración",
+        "a1c29b01-91ae-46d4-99f2-4ccd75790e40": "Fecha",
+        "0201a07a-79d9-427f-a942-03cbb4553d78": "Comentario",
+        "398b56fc-57f0-4d1c-8330-80249faa4244": "email",
+        "587d6ad0-e986-4296-a3bc-b6c51a31389d": "Tarifas",
+        "d7200e33-90fe-4be7-a24f-aee4388a9241": "Direccion",
+        "ea1e6b50-6612-4f0a-8cac-1a9680840e2a": "Metodo de cobro",
+        "619942c5-8d51-4cac-a7d8-2fee4cc2c2d5": "Cuenta corriente",
+        "59125b08-7423-436e-8103-60a0a941c358": "Nombre del titular",
+        "292c5315-57d0-44fc-889b-452e746bcf6d": "IBAN"
     },
     "definitions": {
         "type": "definitions",
@@ -623,7 +934,7 @@
     "creationTS": "2024-01-13T15:32:19.186Z",
     "GUID": "70268b42-1a69-4db6-9691-d29f8193462b",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-01-13T21:27:04.627Z",
+    "lastModifTS": "2024-01-13T21:59:21.425Z",
     "persistenceSchemaVersion": "7",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -632,6 +943,9 @@
     "applicationInformation": {
         "version": "7.1.0"
     },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
     "hackoladeMeta": {},
     "settings": {
         "centralPane": {
@@ -639,26 +953,26 @@
                 "erd": [
                     {
                         "GUID": "440abab9-efd9-43d7-85bd-557cb872b77d",
-                        "x": 1032.8740781240515,
-                        "y": 549.9369499625367,
-                        "width": 263,
-                        "height": 310,
+                        "x": 1004.7141502593627,
+                        "y": 1225.775218715073,
+                        "width": 289,
+                        "height": 614,
                         "color": {}
                     },
                     {
                         "GUID": "c3951347-9cd3-44d1-b139-75e32a8a206f",
-                        "x": 1378.1254763785112,
-                        "y": 548.5998582508156,
-                        "width": 281,
-                        "height": 320,
+                        "x": 1413.5861262821934,
+                        "y": 1225.481087294636,
+                        "width": 283,
+                        "height": 358,
                         "color": {}
                     },
                     {
                         "GUID": "19bc584b-11d8-4ca9-82d3-5c089695a4aa",
-                        "x": 1767.8177631978629,
-                        "y": 442.64821902274184,
-                        "width": 269,
-                        "height": 235,
+                        "x": 1849.168665918075,
+                        "y": 1224.8684374863246,
+                        "width": 255,
+                        "height": 409,
                         "color": {}
                     }
                 ],
