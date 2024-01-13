@@ -1,11 +1,11 @@
 Query #1
-    Un usuario cliente puede registrarse en la aplicacion:
+    Un cliente puede registrarse en la aplicacion:
 
 > db.cliente.insertOne(
 	{
 		Nombre: "Radhika",
 		Apellido: "Sharma",
-		User_ID: 54548546,
+		Cliente_ID: 54548546,
 		E_mail: "radhika_sharma.123@gmail.com",
 		Direccion: "av meridiana 186, barcelona",
 		Contraseña: "fet453tfwer"
@@ -18,10 +18,10 @@ output ->
     }
 
 Query #2
-    El usuario cliente puede modificar sus datos:
+    El cliente puede modificar sus datos:
 
-> db.usuarioCliente.updateOne(
-    {Nombre: "Radhika"},
+> db.cliente.updateOne(
+    {Cliente_ID: 54548546},
     {$set: {"E_mail": "radhika_sh@gmail.com"}}
 )
 
@@ -34,10 +34,10 @@ output ->
     
 
 Query #3
-    El usuario cliente puede darse de baja de la aplicacion:
+    El cliente puede darse de baja de la aplicacion:
 
-> db.usuarioCliente.deleteOne(
-    {Nombre: "Radhika"},
+> db.cliente.deleteOne(
+    {Cliente_ID: 54548546},
 )
 
 output ->
@@ -46,14 +46,32 @@ output ->
         "deletedCount" : 1 
     }
 
-Query #4
-    Un usuario transportista puede registrarse en la aplicacion:
+Querry #4
+	El cliente puede ver los servicios contratados
+
+> db.servicios.find(
+	{Cliente_ID: 54548546}
+)
+
+output ->
+
+Query #5
+	El cliente puede cancelar servicios.
+
+> db.servicios.deleteOne(
+    {id_servicio: 89689546},
+)
+
+output ->
+
+Query #6
+    Un transportista puede registrarse en la aplicacion:
     
-> db.cliente.insertOne(
+> db.transportista.insertOne(
 	{
 		Nombre: "Sebastian",
 		Apellido: "Forero",
-		User_ID: 45657846,
+		id_Transportista: 45657846,
 		E_mail: "sebas_forero.123@gmail.com",
 		Direccion: "av diagonal 186, barcelona",
 		Contraseña: "ui4ndf53tfwer",
@@ -68,3 +86,39 @@ output ->
 	"insertedId" : ObjectId("5dd9b4070fb13eec3963beu")
 }
 >
+Query #7
+	El transportista puede modificar sus datos:
+
+> db.transportista.updateOne(
+    {id_Transportista: 45657846},
+    {$set: {"E_mail": "sebastian123@gmail.com"}}
+)
+
+output ->
+    { 
+        "acknowledged" : true, 
+        "matchedCount" : 1, 
+        "modifiedCount" : 1 
+    }
+
+Query #8
+	El transportista puede darse de baja de la aplicación:
+
+> db.transportista.deleteOne(
+    {id_Transportista: 45657846},
+)
+
+output ->
+    { 
+        "acknowledged" : true, 
+        "deletedCount" : 1 
+    }
+
+Querry #9
+	El transportista puede ver los servicios a realizar:
+
+> db.servicios.find(
+	{id_Transportista: 45657846}
+)
+
+output ->
