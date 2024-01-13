@@ -1,0 +1,70 @@
+Query #1
+    Un usuario cliente puede registrarse en la aplicacion:
+
+> db.cliente.insertOne(
+	{
+		Nombre: "Radhika",
+		Apellido: "Sharma",
+		User_ID: 54548546,
+		E_mail: "radhika_sharma.123@gmail.com",
+		Direccion: "av meridiana 186, barcelona",
+		Contraseña: "fet453tfwer"
+	})
+	
+output ->
+    {
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5dd62b4070fb13eec3963bea")
+    }
+
+Query #2
+    El usuario cliente puede modificar sus datos:
+
+> db.usuarioCliente.updateOne(
+    {Nombre: "Radhika"},
+    {$set: {"E_mail": "radhika_sh@gmail.com"}}
+)
+
+output ->
+    { 
+        "acknowledged" : true, 
+        "matchedCount" : 1, 
+        "modifiedCount" : 1 
+    }
+    
+
+Query #3
+    El usuario cliente puede darse de baja de la aplicacion:
+
+> db.usuarioCliente.deleteOne(
+    {Nombre: "Radhika"},
+)
+
+output ->
+    { 
+        "acknowledged" : true, 
+        "deletedCount" : 1 
+    }
+
+Query #4
+    Un usuario transportista puede registrarse en la aplicacion:
+    
+> db.cliente.insertOne(
+	{
+		Nombre: "Sebastian",
+		Apellido: "Forero",
+		User_ID: 45657846,
+		E_mail: "sebas_forero.123@gmail.com",
+		Direccion: "av diagonal 186, barcelona",
+		Contraseña: "ui4ndf53tfwer",
+		Vehiculo: "Camion",
+		Tarifas: [],
+		Zonas: []
+	})
+	
+output ->
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("5dd9b4070fb13eec3963beu")
+}
+>
