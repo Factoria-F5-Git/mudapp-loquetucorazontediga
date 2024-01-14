@@ -1293,7 +1293,7 @@
     "creationTS": "2024-01-13T15:32:19.186Z",
     "GUID": "70268b42-1a69-4db6-9691-d29f8193462b",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-01-14T21:45:08.190Z",
+    "lastModifTS": "2024-01-14T22:11:34.270Z",
     "persistenceSchemaVersion": "7",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1357,7 +1357,18 @@
                     "decorativeSymbols": []
                 },
                 "buckets": [],
-                "collapsedNodes": [],
+                "collapsedNodes": [
+                    "19bc584b-11d8-4ca9-82d3-5c089695a4aabf6ecf7a-32ec-4e94-9af9-c10f6874bf28",
+                    "19bc584b-11d8-4ca9-82d3-5c089695a4aadfe1da3d-761d-42e2-b032-aeb353183e05",
+                    "c3951347-9cd3-44d1-b139-75e32a8a206f71879973-9b16-40b6-b49b-f7ed3a5d5ae1",
+                    "c3951347-9cd3-44d1-b139-75e32a8a206f222f2077-f1d1-4957-bedc-b7ff1cb46623",
+                    "c5dba26b-481c-4e90-9f1c-96badee1bc3c02ebb144-8be9-4954-86b6-7dda9cbd7125",
+                    "c5dba26b-481c-4e90-9f1c-96badee1bc3cb469555b-bbe9-434b-9cd1-9e1a91d7553b",
+                    "c5dba26b-481c-4e90-9f1c-96badee1bc3cf52e790d-fd7b-443a-b987-f7fe93ac4af9",
+                    "440abab9-efd9-43d7-85bd-557cb872b77dd7200e33-90fe-4be7-a24f-aee4388a9241",
+                    "440abab9-efd9-43d7-85bd-557cb872b77d780558d3-bb71-4a89-b8d3-5dbd0d4e52bc",
+                    "440abab9-efd9-43d7-85bd-557cb872b77d539cb4b0-7f50-4f8f-912b-9cadb5961393"
+                ],
                 "activeRelationship": "",
                 "activeRelationshipFields": {
                     "childField": [],
