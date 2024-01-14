@@ -143,6 +143,46 @@
                     },
                     "foreignCollection": "",
                     "foreignField": []
+                },
+                {
+                    "name": "Media de valoraciones",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "properties": [],
+                    "color": "#555555",
+                    "error": {},
+                    "GUID": "01dd46a0-6dae-46a7-93c1-5e881cffd719"
+                },
+                {
+                    "name": "Disponibilidad",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "boolean",
+                            "color": "#555555",
+                            "GUID": "12a19877-9747-44cb-b3b0-033caa203b10",
+                            "name": "No disponible",
+                            "error": {}
+                        },
+                        {
+                            "name": "Disponible",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "boolean",
+                            "color": "#555555",
+                            "GUID": "3fb9592f-5c90-4bae-b6a3-d72682b06bde",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "color": "#555555",
+                    "GUID": "539cb4b0-7f50-4f8f-912b-9cadb5961393",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -931,15 +971,15 @@
                     },
                     {
                         "y": 2221.971907988339,
-                        "x": 1320.1305624571953
+                        "x": 1331.1305624571953
                     },
                     {
-                        "y": 1970.299187360864,
-                        "x": 1320.1305624571953
+                        "y": 1976.217354118076,
+                        "x": 1331.1305624571953
                     },
                     {
-                        "x": 1267.0338312338968,
-                        "y": 1970.299187360864
+                        "x": 1278.0338312338968,
+                        "y": 1976.217354118076
                     }
                 ],
                 "sides": [
@@ -979,11 +1019,11 @@
                 "shape": [
                     {
                         "x": 1429.7743053322934,
-                        "y": 1967.282474075829
+                        "y": 1967.470833575641
                     },
                     {
                         "x": 1382.8354756875235,
-                        "y": 1967.282474075829
+                        "y": 1967.470833575641
                     },
                     {
                         "x": 1382.8354756875235,
@@ -1030,15 +1070,15 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1707.7743053322934,
-                        "y": 1984.888058807053
+                        "x": 1703.7743053322934,
+                        "y": 1985.183769433275
                     },
                     {
-                        "x": 1777.4068579703571,
-                        "y": 1984.888058807053
+                        "x": 1773.4068579703571,
+                        "y": 1985.183769433275
                     },
                     {
-                        "x": 1777.4068579703571,
+                        "x": 1773.4068579703571,
                         "y": 1961.1687009601246
                     },
                     {
@@ -1083,19 +1123,19 @@
                 "shape": [
                     {
                         "x": 1429.7743053322934,
-                        "y": 2006.9561437614734
+                        "y": 2007.3864158813199
                     },
                     {
-                        "x": 1345.0010097653333,
-                        "y": 2006.9561437614734
+                        "x": 1356.0010097653333,
+                        "y": 2007.3864158813199
                     },
                     {
-                        "x": 1345.0010097653333,
-                        "y": 1969.7427422706041
+                        "x": 1356.0010097653333,
+                        "y": 1975.4717100095386
                     },
                     {
-                        "x": 1267.0338312338968,
-                        "y": 1969.7427422706041
+                        "x": 1278.0338312338968,
+                        "y": 1975.4717100095386
                     }
                 ],
                 "sides": [
@@ -1135,19 +1175,19 @@
                 "shape": [
                     {
                         "x": 980.0455841125067,
-                        "y": 1595.2202426831313
+                        "y": 1595.3918478475734
                     },
                     {
                         "x": 943.9351611018607,
-                        "y": 1595.2202426831313
+                        "y": 1595.3918478475734
                     },
                     {
-                        "y": 1967.8585817325234,
+                        "y": 1972.9426197432877,
                         "x": 943.9351611018607
                     },
                     {
                         "x": 977.0338312338968,
-                        "y": 1967.8585817325234
+                        "y": 1972.9426197432877
                     }
                 ],
                 "sides": [
@@ -1224,7 +1264,11 @@
         "f52e790d-fd7b-443a-b987-f7fe93ac4af9": "Tarifas",
         "3970bdb8-5a0c-40fe-97b1-1778bd87b1c2": "Ayudantes",
         "2fec01e6-e476-4582-85d6-4a7094343dfe": "Carretilla",
-        "b84e7462-ff15-497e-858d-4abefb104295": "fk OPCIONES DE SERVICIO.Transportista_id to TRANSPORTISTA.Transportista_id"
+        "b84e7462-ff15-497e-858d-4abefb104295": "fk OPCIONES DE SERVICIO.Transportista_id to TRANSPORTISTA.Transportista_id",
+        "01dd46a0-6dae-46a7-93c1-5e881cffd719": "Media de valoraciones",
+        "539cb4b0-7f50-4f8f-912b-9cadb5961393": "Disponibilidad",
+        "12a19877-9747-44cb-b3b0-033caa203b10": "No disponible",
+        "3fb9592f-5c90-4bae-b6a3-d72682b06bde": "Disponible"
     },
     "definitions": {
         "type": "definitions",
@@ -1249,7 +1293,7 @@
     "creationTS": "2024-01-13T15:32:19.186Z",
     "GUID": "70268b42-1a69-4db6-9691-d29f8193462b",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-01-14T21:02:04.819Z",
+    "lastModifTS": "2024-01-14T21:45:08.190Z",
     "persistenceSchemaVersion": "7",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1269,8 +1313,8 @@
                         "GUID": "440abab9-efd9-43d7-85bd-557cb872b77d",
                         "x": 977.0338312338968,
                         "y": 1952.915906960974,
-                        "width": 290,
-                        "height": 287,
+                        "width": 301,
+                        "height": 387,
                         "color": {}
                     },
                     {
@@ -1293,16 +1337,16 @@
                         "GUID": "6197ec49-f67a-4d9c-aa94-2dc19b1a575e",
                         "x": 1429.7743053322934,
                         "y": 1936.3915161066475,
-                        "width": 278,
-                        "height": 163,
+                        "width": 274,
+                        "height": 164,
                         "color": {}
                     },
                     {
                         "GUID": "c5dba26b-481c-4e90-9f1c-96badee1bc3c",
                         "x": 980.0455841125067,
                         "y": 1565.4452413439572,
-                        "width": 298,
-                        "height": 345,
+                        "width": 287,
+                        "height": 347,
                         "color": {}
                     }
                 ],
@@ -1314,7 +1358,7 @@
                 },
                 "buckets": [],
                 "collapsedNodes": [],
-                "activeRelationship": "05922f68-8102-413d-a844-184170ff7db9",
+                "activeRelationship": "",
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
