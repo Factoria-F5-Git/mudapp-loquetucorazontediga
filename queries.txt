@@ -122,3 +122,8 @@ Querry #9
 )
 
 output ->
+
+Query
+    El ususario hace una valoracion del servicio
+
+    
