@@ -11,7 +11,8 @@ Query #1
         calle: "av meridiana",
         numero: 158,
         ciudad: "Barcelona",
-        codigoPostal: 08028},
+        codigoPostal: 08028
+        },
     email: "radhika_sharma.123@gmail.com",
     contraseña: "fet453tfwer"
 })
@@ -25,7 +26,8 @@ Query #1
         calle: meridiana, 
         numero: 158, ciudad: 
         Barcelona, 
-        codigoPostal: 08028},
+        codigoPostal: 08028
+        },
     email: "radhika_sharma.123@gmail.com",
     metodoDePago:{
         tarjeta:{
@@ -41,78 +43,138 @@ Query #2
     El cliente puede modificar sus datos:
 
 > db.usuario.updateOne(
-    {user_ID: 54548546T},
-    {$set: {"E_mail": "radhika123@gmail.com"}}
+    {user_id: 54548546T},
+    {$set: {"email": "radhika123@gmail.com"}}
 )
 
 > db.cliente.updateOne(
-    {cliente_ID: 54548546T},
-    {$set: {"E_mail": "radhika123@gmail.com"}}
+    {cliente_id: 54548546T},
+    {$set: {"email": "radhika123@gmail.com"}}
 )
 
 Query #3
     El cliente puede darse de baja de la aplicacion:
 
+> db.usuario.deleteOne(
+    {user_id: 54548546T}
+)
+ 
 > db.cliente.deleteOne(
-    {Cliente_ID: 54548546},
+    {cliente_id: 54548546T},
 )
 
 Querry #4
 	El cliente puede ver los servicios contratados
 
 > db.servicios.find(
-	{Cliente_ID: 54548546}
+	{cliente_id: 54548546}
 )
-
 
 Query #5
 	El cliente puede cancelar servicios.
 
-> db.servicios.deleteOne(
-    {id_servicio: 89689546},
+> db.servicio.deleteOne(
+    {servicio_id: "S21561"},
 )
-
 
 Query #6
     Un transportista puede registrarse en la aplicacion:
     
-> db.transportista.insertOne(
-	{
-		Transportista_id: 45657846,
-		Nombre: "Sebastian",
-		Apellido: "Forero",
-		Direccion: "av diagonal 186, barcelona",
-		E_mail: "sebas_forero.123@gmail.com",
-		Contraseña: "ui4ndf53tfwer",
-		Vehiculo: "Camion",
-		Tarifas: [],
-		Zonas: []
-	})
-	
+> db.usuario.insertOne(
+{
+	user_id: 45657846K,
+	nombre: "Sebastian",
+	apellido: "Forero",
+	direccion: {
+        calle: "av diagonal",
+        numero: 186,
+        ciudad: Barcelona,
+        codigoPostal:08030
+    },
+    email: "sebas_forero.123@gmail.com",
+	contraseña: "ui4ndf53tfwer",
+})
 
->
+> db.transportista.insertOne(
+{
+	transportista_id: 45657846K,
+	nombre: "Sebastian",
+	apellido: "Forero",
+	email: "sebas_forero.123@gmail.com",
+	direccion: {
+        calle: "av diagonal",
+        numero: 186,
+        ciudad: Barcelona,
+        codigoPostal:08030
+    }
+    disponibilidad: true,
+    vehiculo: {
+        "capacidadMetrosCubicos": 40,
+        "tipo": {
+            "camion": true,
+            "furgoneta": false,
+            "coche": false
+        }
+    },
+    zonas: [
+            {
+                "Barcelona": true
+            }
+        ],
+    tarifas: {
+        "precioCamion": "",
+        "precioFurgoneta": "",
+        "precioCoche": "",
+        "precioExtras": {
+            "precioAyudantes": "",
+            "precioCarretilla": ""
+        }
+    },
+    metodoDeCobro: {
+        "nombreDelTitular": "Sebastian Forero",
+        "iban": "ES785421313545213256"
+    },
+    mediaValoraciones: ""
+    })
+
+
 Query #7
 	El transportista puede modificar sus datos:
 
-> db.transportista.updateOne(
-    {Transportista_id: 45657846},
-    {$set: {"E_mail": "sebastian123@gmail.com"}}
+> db.usuario.updateOne(
+    {user_id: "45657846K"},
+    {$set: {"email": "sebastian123@gmail.com"}}
 )
 
+> db.transportista.updateOne(
+    {transportista_id: "45657846K"},
+    {$set: {"email": "sebastian123@gmail.com"}}
+)
 
 Query #8
 	El transportista puede darse de baja de la aplicación:
 
 > db.transportista.deleteOne(
-    {Transportista_id: 45657846},
+    {transportista_id: "45657846K"},
 )
 
+> db.usuario.deleteOne(
+    {user_id: "45657846K"},
+)
 
 Querry #9
 	El transportista puede ver los servicios a realizar:
 
 > db.servicios.find(
-	{Transportista_id: 45657846}
+	{transportista_id: "45696532A"}
 )
 
-    
+Query #10
+    El sistema proporciona una lista de transportistas al usuario ordenados por ranking, según la disponibilidad de transportistas de la zona que más se adecúe a las características solicitadas.
+
+>db.transportista.find({disponibilidad:true}, {_id: 0, transportista_id: 0, email: 0, disponibilidad: 0, zonas: 0, metodoDeCobro: 0}).sort({mediaValoraciones:-1})
+
+Query #11
+    El sistema bloquea el transportista.
+
+>db.transportista.updateOne({transportista_id:"63326548T"},{$set:{disponibilidad:false}})
