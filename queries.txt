@@ -1,37 +1,54 @@
 Query #1
     Un cliente puede registrarse en la aplicacion:
 
+> db.usuario.insertOne(
+{
+    user_id: "54548546T",
+    role: "Cliente",
+    nombre: "Radhika",
+    apellido: "Sharma",
+    direccion: {
+        calle: "av meridiana",
+        numero: 158,
+        ciudad: "Barcelona",
+        codigoPostal: 08028},
+    email: "radhika_sharma.123@gmail.com",
+    contraseña: "fet453tfwer"
+})
+
 > db.cliente.insertOne(
-	{
-		Cliente_ID: 54548546,
-		Nombre: "Radhika",
-		Apellido: "Sharma",
-		Direccion: "av meridiana 186, barcelona",
-		E_mail: "radhika_sharma.123@gmail.com",
-		Contraseña: "fet453tfwer"
-	})
-	
-output ->
-    {
-        "acknowledged" : true,
-        "insertedId" : ObjectId("5dd62b4070fb13eec3963bea")
+{
+    cliente_id: "54548546T", 
+    nombre: "Radhika", 
+    apellido: "Sharma",
+    direccion: {
+        calle: meridiana, 
+        numero: 158, ciudad: 
+        Barcelona, 
+        codigoPostal: 08028},
+    email: "radhika_sharma.123@gmail.com",
+    metodoDePago:{
+        tarjeta:{
+        nombreDelTitular: "Radhika Sharma",
+        numeroTarjeta: 3548945523,
+        cvn: 587
+        },
+    paypal: {”email”: "radhika_sharma.123@gmail.com"}
     }
+})
 
 Query #2
     El cliente puede modificar sus datos:
 
-> db.cliente.updateOne(
-    {Cliente_ID: 54548546},
-    {$set: {"E_mail": "radhika_sh@gmail.com"}}
+> db.usuario.updateOne(
+    {user_ID: 54548546T},
+    {$set: {"E_mail": "radhika123@gmail.com"}}
 )
 
-output ->
-    { 
-        "acknowledged" : true, 
-        "matchedCount" : 1, 
-        "modifiedCount" : 1 
-    }
-    
+> db.cliente.updateOne(
+    {cliente_ID: 54548546T},
+    {$set: {"E_mail": "radhika123@gmail.com"}}
+)
 
 Query #3
     El cliente puede darse de baja de la aplicacion:
@@ -40,12 +57,6 @@ Query #3
     {Cliente_ID: 54548546},
 )
 
-output ->
-    { 
-        "acknowledged" : true, 
-        "deletedCount" : 1 
-    }
-
 Querry #4
 	El cliente puede ver los servicios contratados
 
@@ -53,7 +64,6 @@ Querry #4
 	{Cliente_ID: 54548546}
 )
 
-output ->
 
 Query #5
 	El cliente puede cancelar servicios.
@@ -62,7 +72,6 @@ Query #5
     {id_servicio: 89689546},
 )
 
-output ->
 
 Query #6
     Un transportista puede registrarse en la aplicacion:
@@ -80,11 +89,7 @@ Query #6
 		Zonas: []
 	})
 	
-output ->
-{
-	"acknowledged" : true,
-	"insertedId" : ObjectId("5dd9b4070fb13eec3963beu")
-}
+
 >
 Query #7
 	El transportista puede modificar sus datos:
@@ -94,12 +99,6 @@ Query #7
     {$set: {"E_mail": "sebastian123@gmail.com"}}
 )
 
-output ->
-    { 
-        "acknowledged" : true, 
-        "matchedCount" : 1, 
-        "modifiedCount" : 1 
-    }
 
 Query #8
 	El transportista puede darse de baja de la aplicación:
@@ -108,11 +107,6 @@ Query #8
     {Transportista_id: 45657846},
 )
 
-output ->
-    { 
-        "acknowledged" : true, 
-        "deletedCount" : 1 
-    }
 
 Querry #9
 	El transportista puede ver los servicios a realizar:
@@ -120,10 +114,5 @@ Querry #9
 > db.servicios.find(
 	{Transportista_id: 45657846}
 )
-
-output ->
-
-Query
-    El ususario hace una valoracion del servicio
 
     

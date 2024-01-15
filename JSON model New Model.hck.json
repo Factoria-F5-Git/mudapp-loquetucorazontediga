@@ -15,7 +15,8 @@
                     "GUID": "3ab4a0e1-b93c-448a-9845-0f9b96775b6c",
                     "childRelationships": [
                         "916a2497-0b46-42fc-b630-d81aa07f5171",
-                        "05922f68-8102-413d-a844-184170ff7db9"
+                        "05922f68-8102-413d-a844-184170ff7db9",
+                        "4f8c9134-17eb-435e-b6c8-4f70ebd5c241"
                     ],
                     "error": {}
                 },
@@ -797,7 +798,14 @@
                     "color": "#555555",
                     "GUID": "2be6bc0c-ad70-44a7-ba3b-e6f766b5273b",
                     "name": "User_id",
-                    "error": {}
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "440abab9-efd9-43d7-85bd-557cb872b77d",
+                    "foreignField": [
+                        "440abab9-efd9-43d7-85bd-557cb872b77d",
+                        "3ab4a0e1-b93c-448a-9845-0f9b96775b6c"
+                    ],
+                    "parentRelationship": "4f8c9134-17eb-435e-b6c8-4f70ebd5c241"
                 },
                 {
                     "name": "Rol",
@@ -1173,11 +1181,11 @@
                 "shape": [
                     {
                         "x": 1476.4409719989603,
-                        "y": 1745.0209724730455
+                        "y": 1759.0209724730455
                     },
                     {
                         "x": 1412.6676764320002,
-                        "y": 1745.0209724730455
+                        "y": 1759.0209724730455
                     },
                     {
                         "x": 1412.6676764320002,
@@ -1233,16 +1241,68 @@
                     },
                     {
                         "x": 2184.073453085633,
-                        "y": 1940.3934343615842
+                        "y": 1959.3934343615842
                     },
                     {
                         "x": 2162.073453085633,
-                        "y": 1940.3934343615842
+                        "y": 1959.3934343615842
                     }
                 ],
                 "sides": [
                     "right",
                     "right"
+                ]
+            }
+        },
+        {
+            "name": "fk USUARIOS.User_id to TRANSPORTISTA.Transportista_id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "440abab9-efd9-43d7-85bd-557cb872b77d",
+                    "3ab4a0e1-b93c-448a-9845-0f9b96775b6c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "44552aca-a86a-4287-9025-9795cb32fd5b",
+                    "2be6bc0c-ad70-44a7-ba3b-e6f766b5273b"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "440abab9-efd9-43d7-85bd-557cb872b77d",
+            "childCollection": "44552aca-a86a-4287-9025-9795cb32fd5b",
+            "GUID": "4f8c9134-17eb-435e-b6c8-4f70ebd5c241",
+            "hackoladeStyles": {
+                "GUID": "6eb2e368-e135-4f6d-a251-382974fee3ee",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1861.4409719989603,
+                        "y": 1591.891516106648
+                    },
+                    {
+                        "x": 999.0338312338968,
+                        "y": 1591.891516106648
+                    },
+                    {
+                        "x": 999.0338312338968,
+                        "y": 1732.915906960974
+                    },
+                    {
+                        "x": 1014.0338312338968,
+                        "y": 1732.915906960974
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "left"
                 ]
             }
         }
@@ -1325,7 +1385,8 @@
         "472ff6d7-0812-4b23-a813-a186fa9de2c6": "Metodo de cobro",
         "418eb296-7c18-4461-ad8c-fb7e9a704560": "Nombre del titular",
         "527df272-d3d9-4ace-89bc-504f4d90ac27": "IBAN",
-        "9b3fe393-3665-471f-ab30-a6cecb1ddf12": "Media de valoraciones"
+        "9b3fe393-3665-471f-ab30-a6cecb1ddf12": "Media de valoraciones",
+        "4f8c9134-17eb-435e-b6c8-4f70ebd5c241": "fk USUARIOS.User_id to TRANSPORTISTA.Transportista_id"
     },
     "definitions": {
         "type": "definitions",
@@ -1350,7 +1411,7 @@
     "creationTS": "2024-01-13T15:32:19.186Z",
     "GUID": "70268b42-1a69-4db6-9691-d29f8193462b",
     "isLineageEnabled": false,
-    "lastModifTS": "2024-01-15T16:18:40.763Z",
+    "lastModifTS": "2024-01-15T18:32:52.198Z",
     "persistenceSchemaVersion": "7",
     "isCreatedByPlugin": true,
     "pluginInformation": {

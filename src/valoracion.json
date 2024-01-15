@@ -1,130 +1,100 @@
 [
     {
-        "_id": {
-            "$oid": "65a3ff9ea77e4bce1b375c4d"
-        },
         "servicio_id": "S21561",
         "cliente_id": "12998675L",
         "transportista_id": "49986523L",
         "valoracion": {
-            "valoracion_id": "5",
+            "valoracion": "5",
             "fecha": "23/02/2023",
             "comentario": "Todo fue genial, muchas gracias"
         }
     },
     {
-        "_id": {
-            "$oid": "65a3ff9ea77e4bce1b375c4e"
-        },
         "servicio_id": "S78901",
         "cliente_id": "99656887J",
         "transportista_id": "45696532A",
         "valoracion": {
-            "valoracion_id": "4",
+            "valoracion": "4",
             "fecha": "25/11/2023",
             "comentario": "Buena comunicación, el transporte fue rápido"
         }
     },
     {
-        "_id": {
-            "$oid": "65a3ff9ea77e4bce1b375c4f"
-        },
         "servicio_id": "S23456",
         "cliente_id": "49656456A",
         "transportista_id": "45696532M",
         "valoracion": {
-            "valoracion_id": "2",
+            "valoracion": "2",
             "fecha": "03/01/2024",
             "comentario": "Problemas con la entrega, se necesita mejorar"
         }
     },
     {
-        "_id": {
-            "$oid": "65a3ff9ea77e4bce1b375c50"
-        },
         "servicio_id": "S56789",
         "cliente_id": "99656887J",
         "transportista_id": "78787855S",
         "valoracion": {
-            "valoracion_id": "5",
+            "valoracion": "5",
             "fecha": "15/02/2024",
             "comentario": "Entrega perfecta, sin problemas"
         }
     },
     {
-        "_id": {
-            "$oid": "65a3ff9ea77e4bce1b375c51"
-        },
         "servicio_id": "S67890",
         "cliente_id": "12345678A",
         "transportista_id": "55236987J",
         "valoracion": {
-            "valoracion_id": "3",
+            "valoracion": "3",
             "fecha": "28/03/2024",
             "comentario": "La entrega se retrasó un poco, pero fue aceptable"
         }
     },
     {
-        "_id": {
-            "$oid": "65a3ff9ea77e4bce1b375c52"
-        },
         "servicio_id": "S78901",
         "cliente_id": "98765432B",
         "transportista_id": "63326548T",
         "valoracion": {
-            "valoracion_id": "4",
+            "valoracion": "4",
             "fecha": "10/05/2024",
             "comentario": "Entrega rápida y eficiente, sin problemas"
         }
     },
     {
-        "_id": {
-            "$oid": "65a3ff9ea77e4bce1b375c53"
-        },
         "servicio_id": "S89012",
         "cliente_id": "11223344C",
         "transportista_id": "3965325B",
         "valoracion": {
-            "valoracion_id": "5",
+            "valoracion": "5",
             "fecha": "22/07/2024",
             "comentario": "¡Excelente servicio! Muy satisfecho con la entrega"
         }
     },
     {
-        "_id": {
-            "$oid": "65a3ff9ea77e4bce1b375c54"
-        },
         "servicio_id": "S90123",
         "cliente_id": "55667788D",
         "transportista_id": "4965378B",
         "valoracion": {
-            "valoracion_id": "3",
+            "valoracion": "3",
             "fecha": "05/09/2024",
             "comentario": "La entrega tuvo un pequeño retraso, pero todo llegó en buen estado"
         }
     },
     {
-        "_id": {
-            "$oid": "65a3ff9ea77e4bce1b375c55"
-        },
         "servicio_id": "S12345",
         "cliente_id": "78901234E",
         "transportista_id": "89636565X",
         "valoracion": {
-            "valoracion_id": "5",
+            "valoracion": "5",
             "fecha": "18/11/2024",
             "comentario": "¡Servicio excepcional! Llegó antes de lo esperado"
         }
     },
     {
-        "_id": {
-            "$oid": "65a3ff9ea77e4bce1b375c56"
-        },
         "servicio_id": "S28451",
         "cliente_id": "34567890F",
         "transportista_id": "96987414M",
         "valoracion": {
-            "valoracion_id": "4",
+            "valoracion": "4",
             "fecha": "03/01/2025",
             "comentario": "Entrega rápida y eficiente, muy contento con el servicio"
         }

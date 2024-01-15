@@ -1,0 +1,282 @@
+[
+    {
+        "user_id": "49986523L",
+        "role": "Transportista",
+        "nombre": "Gabriel",
+        "apellido": "Suarez",
+        "direccion": {
+            "calle": "Bolibia",
+            "numero": "14",
+            "codigoPostal": "08912",
+            "ciudad": "Barcelona"
+        },
+        "email": "gabrielsuarez@gmail.com",
+        "contraseña": "56985654"
+    },
+    {
+        "user_id": "45696532A",
+        "role": "Transportista",
+        "nombre": "Laura",
+        "apellido": "Mendoza",
+        "direccion": {
+            "calle": "Juan Benito",
+            "numero": "22",
+            "codigoPostal": "08945",
+            "ciudad": "Barcelona"
+        },
+        "email": "lauramendo26@gmail.com",
+        "contraseña": "26451243"
+    },
+    {
+        "user_id": "45696532M",
+        "role": "Transportista",
+        "nombre": "Sergi",
+        "apellido": "Roca",
+        "direccion": {
+            "calle": "Los caminos",
+            "numero": "106",
+            "codigoPostal": "08911",
+            "ciudad": "Barcelona"
+        },
+        "email": "sergiroca@gmail.com",
+        "contraseña": "78468963"
+    },
+    {
+        "user_id": "78787855S",
+        "role": "Transportista",
+        "nombre": "Alberto",
+        "apellido": "Hernadez",
+        "direccion": {
+            "calle": "Diagonal",
+            "numero": "455",
+            "codigoPostal": "08942",
+            "ciudad": "Barcelona"
+        },
+        "email": "albehernan@gmail.com",
+        "contraseña": "78465654"
+    },
+    {
+        "user_id": "55236987J",
+        "role": "Transportista",
+        "nombre": "Bernat",
+        "apellido": "Gomis",
+        "direccion": {
+            "calle": "Sagrera",
+            "numero": "85",
+            "codigoPostal": "08932",
+            "ciudad": "Barcelona"
+        },
+        "email": "morenito19@gmail.com",
+        "contraseña": "85258979"
+    },
+    {
+        "user_id": "63326548T",
+        "role": "Transportista",
+        "nombre": "Margarita",
+        "apellido": "Flores",
+        "direccion": {
+            "calle": "Mirador",
+            "numero": "15",
+            "codigoPostal": "08031",
+            "ciudad": "Barcelona"
+        },
+        "email": "floresmarga@gmail.com",
+        "contraseña": "15855654"
+    },
+    {
+        "user_id": "3965325B",
+        "role": "Transportista",
+        "nombre": "Mario",
+        "apellido": "Montes",
+        "direccion": {
+            "calle": "Miralles",
+            "numero": "36",
+            "codigoPostal": "08052",
+            "ciudad": "Barcelona"
+        },
+        "email": "floresmarga@gmail.com",
+        "contraseña": "44223366"
+    },
+    {
+        "user_id": "4965378B",
+        "role": "Transportista",
+        "nombre": "Fernando",
+        "apellido": "Aguilar",
+        "direccion": {
+            "calle": "Solera",
+            "numero": "66",
+            "codigoPostal": "08043",
+            "ciudad": "Barcelona"
+        },
+        "email": "floresmarga@gmail.com",
+        "contraseña": "55224896"
+    },
+    {
+        "user_id": "89636565X",
+        "role": "Transportista",
+        "nombre": "Mireia",
+        "apellido": "Gutierrez",
+        "direccion": {
+            "calle": "Felipe IV",
+            "numero": "203",
+            "codigoPostal": "08163",
+            "ciudad": "Barcelona"
+        },
+        "email": "miregutierrez@gmail.com",
+        "contraseña": "55224896"
+    },
+    {
+        "user_id": "96987414M",
+        "role": "Transportista",
+        "nombre": "Marcos",
+        "apellido": "Gonzalez",
+        "direccion": {
+            "calle": "Los pajaros",
+            "numero": "279",
+            "codigoPostal": "08123",
+            "ciudad": "Barcelona"
+        },
+        "email": "marcosgon2002@gmail.com",
+        "contraseña": "55224896"
+    },
+    {
+        "user_id": "12998675L",
+        "role": "Cliente",
+        "nombre": "Rodrigo",
+        "apellido": "Mendoza",
+        "direccion": {
+            "calle": "Peru",
+            "numero": "33",
+            "ciudad": "Bacelona",
+            "codigoPostal": "08022"
+        },
+        "email": "rodrigomendoza@gmail.com",
+        "contraseña": "12111114"
+    },
+    {
+        "user_id": "99656887J",
+        "role": "Cliente",
+        "nombre": "Victor",
+        "apellido": "Arroyo",
+        "direccion": {
+            "calle": "Pasaje del rio",
+            "numero": "12",
+            "ciudad": "Bacelona",
+            "codigoPostal": "08052"
+        },
+        "email": "vitorarr@gmail.com",
+        "contraseña": "12111114"
+    },
+    {
+        "user_id": "49656456A",
+        "role": "Cliente",
+        "nombre": "Laura",
+        "apellido": "González",
+        "dirección": {
+            "calle": "Avenida de la Libertad",
+            "numero": "45",
+            "ciudad": "Barcelona",
+            "codigoPostal": "08036"
+        },
+        "email": "lauragonz@gmail.com",
+        "contraseña": "p@ssw0rd"
+    },
+    {
+        "user_id": "99656887J",
+        "role": "Cliente",
+        "nombre": "Carlos",
+        "apellido": "Martínez",
+        "dirección": {
+            "calle": "Calle Mayor",
+            "numero": "28",
+            "ciudad": "Barcelona",
+            "codigoPostal": "08020"
+        },
+        "email": "carlosmart@gmail.com",
+        "contraseña": "securePWD"
+    },
+    {
+        "user_id": "12345678A",
+        "role": "Cliente",
+        "nombre": "Ana",
+        "apellido": "Rodríguez",
+        "dirección": {
+            "calle": "Carrer Gran",
+            "numero": "87",
+            "ciudad": "Barcelona",
+            "codigoPostal": "08010"
+        },
+        "email": "ana.rodriguez@example.com",
+        "contraseña": "secure123"
+    },
+    {
+        "user_id": "98765432B",
+        "role": "Cliente",
+        "nombre": "Pedro",
+        "apellido": "Sánchez",
+        "dirección": {
+            "calle": "Plaça Catalunya",
+            "numero": "20",
+            "ciudad": "Barcelona",
+            "codigoPostal": "08002"
+        },
+        "email": "pedro.sanchez@example.com",
+        "contraseña": "pass1234"
+    },
+    {
+        "user_id": "11223344C",
+        "role": "Cliente",
+        "nombre": "María",
+        "apellido": "López",
+        "dirección": {
+            "calle": "Rambla Catalunya",
+            "numero": "75",
+            "ciudad": "Barcelona",
+            "codigoPostal": "08007"
+        },
+        "email": "maria.lopez@example.com",
+        "contraseña": "p@ssW0rd"
+    },
+    {
+        "user_id": "55667788D",
+        "role": "Cliente",
+        "nombre": "Alejandro",
+        "apellido": "García",
+        "dirección": {
+            "calle": "Diagonal",
+            "numero": "42",
+            "ciudad": "Barcelona",
+            "codigoPostal": "08019"
+        },
+        "email": "alejandro.garcia@example.com",
+        "contraseña": "securePWD456"
+    },
+    {
+        "user_id": "78901234E",
+        "role": "Cliente",
+        "nombre": "Isabel",
+        "apellido": "Martínez",
+        "dirección": {
+            "calle": "Calle Provença",
+            "numero": "63",
+            "ciudad": "Barcelona",
+            "codigoPostal": "08029"
+        },
+        "email": "isabel.martinez@example.com",
+        "contraseña": "mySecurePass"
+    },
+    {
+        "user_id": "34567890F",
+        "role": "Cliente",
+        "nombre": "Javier",
+        "apellido": "Hernández",
+        "dirección": {
+            "calle": "Passeig de Gràcia",
+            "numero": "18",
+            "ciudad": "Barcelona",
+            "codigoPostal": "08007"
+        },
+        "email": "javier.hernandez@example.com",
+        "contraseña": "securePass123"
+    }
+]

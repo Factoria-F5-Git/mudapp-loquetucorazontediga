@@ -1,222 +1,342 @@
 [
     {
-        "_id": {
-            "$oid": "65a3ebeca77e4bce1b375c39"
-        },
         "transportista_id": "49986523L",
         "nombre": "Gabriel",
         "apellido": "Suarez",
-        "direccion": {
-            "calle": "Bolibia",
-            "numero": "14",
-            "codigoPostal": "08912",
-            "ciudad": "Barcelona"
-        },
         "email": "gabrielsuarez@gmail.com",
-        "contraseña": "56985654",
-        "mediaValoraciones": "",
         "disponibilidad": true,
+        "vehiculo": {
+            "capacidadMetrosCubicos": 12,
+            "tipo": {
+                "camion": false,
+                "furgoneta": true,
+                "coche": false
+            }
+        },
+        "zonas": [
+            {
+                "Barcelona": true
+            }
+        ],
+        "tarifas": {
+            "precioCamion": "",
+            "precioFurgoneta": "",
+            "precioCoche": "",
+            "precioExtras": {
+                "precioAyudantes": "",
+                "precioCarretilla": ""
+            }
+        },
         "metodoDeCobro": {
             "nombreDelTitular": "Gabriel Suarez",
             "iban": "ES156489652323654879"
-        }
+        },
+        "mediaValoraciones": ""
     },
     {
-        "_id": {
-            "$oid": "65a3ebeca77e4bce1b375c3a"
-        },
         "transportista_id": "45696532A",
         "nombre": "Laura",
         "apellido": "Mendoza",
-        "direccion": {
-            "calle": "Juan Benito",
-            "numero": "22",
-            "codigoPostal": "08945",
-            "ciudad": "Barcelona"
-        },
         "email": "lauramendo26@gmail.com",
-        "contraseña": "26451243",
-        "mediaValoraciones": "",
         "disponibilidad": true,
+        "vehiculo": {
+            "capacidadMetrosCubicos": 40,
+            "tipo": {
+                "camion": true,
+                "furgoneta": false,
+                "coche": false
+            }
+        },
+        "zonas": [
+            {
+                "Barcelona": true
+            }
+        ],
+        "tarifas": {
+            "precioCamion": "",
+            "precioFurgoneta": "",
+            "precioCoche": "",
+            "precioExtras": {
+                "precioAyudantes": "",
+                "precioCarretilla": ""
+            }
+        },
         "metodoDeCobro": {
             "nombreDelTitular": "Laura Mendoza",
             "iban": "ES785421313545213256"
-        }
+        },
+        "mediaValoraciones": ""
     },
     {
-        "_id": {
-            "$oid": "65a3ebeca77e4bce1b375c3b"
-        },
         "transportista_id": "45696532M",
         "nombre": "Sergi",
         "apellido": "Roca",
-        "direccion": {
-            "calle": "Los caminos",
-            "numero": "106",
-            "codigoPostal": "08911",
-            "ciudad": "Barcelona"
-        },
         "email": "sergiroca@gmail.com",
-        "contraseña": "78468963",
-        "mediaValoraciones": "",
         "disponibilidad": true,
+        "vehiculo": {
+            "capacidadMetrosCubicos": 2,
+            "tipo": {
+                "camion": false,
+                "furgoneta": false,
+                "coche": true
+            }
+        },
+        "zonas": [
+            {
+                "Barcelona": true
+            }
+        ],
+        "tarifas": {
+            "precioCamion": "",
+            "precioFurgoneta": "",
+            "precioCoche": "",
+            "precioExtras": {
+                "precioAyudantes": "",
+                "precioCarretilla": ""
+            }
+        },
         "metodoDeCobro": {
             "nombreDelTitular": "Sergi Roca",
             "iban": "ES789753156498599651"
-        }
+        },
+        "mediaValoraciones": ""
     },
     {
-        "_id": {
-            "$oid": "65a3ebeca77e4bce1b375c3c"
-        },
         "transportista_id": "78787855S",
         "nombre": "Alberto",
         "apellido": "Hernadez",
-        "direccion": {
-            "calle": "Diagonal",
-            "numero": "455",
-            "codigoPostal": "08942",
-            "ciudad": "Barcelona"
-        },
         "email": "albehernan@gmail.com",
-        "contraseña": "78465654",
-        "mediaValoraciones": "",
         "disponibilidad": true,
+        "vehiculo": {
+            "capacidadMetrosCubicos": 40,
+            "tipo": {
+                "camion": true,
+                "furgoneta": false,
+                "coche": false
+            }
+        },
+        "zonas": [
+            {
+                "Barcelona": true
+            }
+        ],
+        "tarifas": {
+            "precioCamion": "",
+            "precioFurgoneta": "",
+            "precioCoche": "",
+            "precioExtras": {
+                "precioAyudantes": "",
+                "precioCarretilla": ""
+            }
+        },
         "metodoDeCobro": {
             "nombreDelTitular": "Alberto Henandez",
             "iban": "ES454896532212156886"
-        }
+        },
+        "mediaValoraciones": ""
     },
     {
-        "_id": {
-            "$oid": "65a3ebeca77e4bce1b375c3d"
-        },
         "transportista_id": "55236987J",
         "nombre": "Bernat",
         "apellido": "Gomis",
-        "direccion": {
-            "calle": "Sagrera",
-            "numero": "85",
-            "codigoPostal": "08932",
-            "ciudad": "Barcelona"
-        },
         "email": "morenito19@gmail.com",
-        "contraseña": "85258979",
-        "mediaValoraciones": "",
         "disponibilidad": true,
+        "vehiculo": {
+            "capacidadMetrosCubicos": 12,
+            "tipo": {
+                "camion": false,
+                "furgoneta": true,
+                "coche": false
+            }
+        },
+        "zonas": [
+            {
+                "Barcelona": true
+            }
+        ],
+        "tarifas": {
+            "precioCamion": "",
+            "precioFurgoneta": "",
+            "precioCoche": "",
+            "precioExtras": {
+                "precioAyudantes": "",
+                "precioCarretilla": ""
+            }
+        },
         "metodoDeCobro": {
             "nombreDelTitular": "Bernat Gomis",
             "iban": "ES454896531233254658"
-        }
+        },
+        "mediaValoraciones": ""
     },
     {
-        "_id": {
-            "$oid": "65a3ebeca77e4bce1b375c3e"
-        },
         "transportista_id": "63326548T",
         "nombre": "Margarita",
         "apellido": "Flores",
-        "direccion": {
-            "calle": "Mirador",
-            "numero": "15",
-            "codigoPostal": "08031",
-            "ciudad": "Barcelona"
-        },
         "email": "floresmarga@gmail.com",
-        "contraseña": "15855654",
-        "mediaValoraciones": "",
         "disponibilidad": true,
+        "vehiculo": {
+            "capacidadMetrosCubicos": 40,
+            "tipo": {
+                "camion": true,
+                "furgoneta": false,
+                "coche": false
+            }
+        },
+        "zonas": [
+            {
+                "Barcelona": true
+            }
+        ],
+        "tarifas": {
+            "precioCamion": "",
+            "precioFurgoneta": "",
+            "precioCoche": "",
+            "precioExtras": {
+                "precioAyudantes": "",
+                "precioCarretilla": ""
+            }
+        },
         "metodoDeCobro": {
             "nombreDelTitular": "Alberto Henandez",
             "iban": "ES454896532212156886"
-        }
+        },
+        "mediaValoraciones": ""
     },
     {
-        "_id": {
-            "$oid": "65a3ebeca77e4bce1b375c3f"
-        },
         "transportista_id": "3965325B",
         "nombre": "Mario",
         "apellido": "Montes",
-        "direccion": {
-            "calle": "Miralles",
-            "numero": "36",
-            "codigoPostal": "08052",
-            "ciudad": "Barcelona"
-        },
         "email": "floresmarga@gmail.com",
-        "contraseña": "44223366",
-        "mediaValoraciones": "",
         "disponibilidad": true,
+        "vehiculo": {
+            "tipo": {
+                "capacidadMetrosCubicos": 2,
+                "camion": false,
+                "furgoneta": false,
+                "coche": true
+            }
+        },
+        "zonas": [
+            {
+                "Barcelona": true
+            }
+        ],
+        "tarifas": {
+            "precioCamion": "",
+            "precioFurgoneta": "",
+            "precioCoche": "",
+            "precioExtras": {
+                "precioAyudantes": "",
+                "precioCarretilla": ""
+            }
+        },
         "metodoDeCobro": {
             "nombreDelTitular": "Mario Montes",
             "iban": "ES4569998653256854785"
-        }
+        },
+        "mediaValoraciones": ""
     },
     {
-        "_id": {
-            "$oid": "65a3ebeca77e4bce1b375c40"
-        },
         "transportista_id": "4965378B",
         "nombre": "Fernando",
         "apellido": "Aguilar",
-        "direccion": {
-            "calle": "Solera",
-            "numero": "66",
-            "codigoPostal": "08043",
-            "ciudad": "Barcelona"
-        },
         "email": "floresmarga@gmail.com",
-        "contraseña": "55224896",
-        "mediaValoraciones": "",
         "disponibilidad": true,
+        "vehiculo": {
+            "capacidadMetrosCubicos": 12,
+            "tipo": {
+                "camion": false,
+                "furgoneta": true,
+                "coche": false
+            }
+        },
+        "zonas": [
+            {
+                "Barcelona": true
+            }
+        ],
+        "tarifas": {
+            "precioCamion": "",
+            "precioFurgoneta": "",
+            "precioCoche": "",
+            "precioExtras": {
+                "precioAyudantes": "",
+                "precioCarretilla": ""
+            }
+        },
         "metodoDeCobro": {
             "nombreDelTitular": "Fernando Aguilar",
             "iban": "ES46826532698745632152"
-        }
+        },
+        "mediaValoraciones": ""
     },
     {
-        "_id": {
-            "$oid": "65a3ebeca77e4bce1b375c41"
-        },
         "transportista_id": "89636565X",
         "nombre": "Mireia",
         "apellido": "Gutierrez",
-        "direccion": {
-            "calle": "Felipe IV",
-            "numero": "203",
-            "codigoPostal": "08163",
-            "ciudad": "Barcelona"
-        },
         "email": "miregutierrez@gmail.com",
-        "contraseña": "55224896",
-        "mediaValoraciones": "",
         "disponibilidad": true,
+        "vehiculo": {
+            "capacidadMetrosCubicos": 12,
+            "tipo": {
+                "camion": false,
+                "furgoneta": true,
+                "coche": false
+            }
+        },
+        "zonas": [
+            {
+                "Barcelona": true
+            }
+        ],
+        "tarifas": {
+            "precioCamion": "",
+            "precioFurgoneta": "",
+            "precioCoche": "",
+            "precioExtras": {
+                "precioAyudantes": "",
+                "precioCarretilla": ""
+            }
+        },
         "metodoDeCobro": {
             "nombreDelTitular": "Mireia Gutierrez",
             "iban": "ES4789521345623156134"
-        }
+        },
+        "mediaValoraciones": ""
     },
     {
-        "_id": {
-            "$oid": "65a3ebeca77e4bce1b375c42"
-        },
         "transportista_id": "96987414M",
         "nombre": "Marcos",
         "apellido": "Gonzalez",
-        "direccion": {
-            "calle": "Los pajaros",
-            "numero": "279",
-            "codigoPostal": "08123",
-            "ciudad": "Barcelona"
-        },
         "email": "marcosgon2002@gmail.com",
-        "contraseña": "55224896",
-        "mediaValoraciones": "",
         "disponibilidad": true,
+        "vehiculo": {
+            "capacidadMetrosCubicos": 12,
+            "tipo": {
+                "camion": true,
+                "furgoneta": true,
+                "coche": false
+            }
+        },
+        "zonas": [
+            {
+                "Barcelona": true
+            }
+        ],
+        "tarifas": {
+            "precioCamion": "",
+            "precioFurgoneta": "",
+            "precioCoche": "",
+            "precioExtras": {
+                "precioAyudantes": "",
+                "precioCarretilla": ""
+            }
+        },
         "metodoDeCobro": {
             "nombreDelTitular": "Marcos Gonzalez",
             "iban": "ES856893212123214"
-        }
+        },
+        "mediaValoraciones": ""
     }
 ]

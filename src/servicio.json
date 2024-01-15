@@ -1,8 +1,5 @@
 [
     {
-        "_id": {
-            "$oid": "65a4301ca77e4bce1b375c57"
-        },
         "servicio_id": "S21561",
         "cliente_id": "12998675L",
         "transportista_id": "49986523L",
@@ -23,9 +20,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a4301ca77e4bce1b375c58"
-        },
         "servicio_id": "S78901",
         "cliente_id": "99656887J",
         "transportista_id": "45696532A",
@@ -46,9 +40,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a4301ca77e4bce1b375c59"
-        },
         "servicio_id": "S23456",
         "cliente_id": "49656456A",
         "transportista_id": "45696532M",
@@ -69,9 +60,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a4301ca77e4bce1b375c5a"
-        },
         "servicio_id": "S56789",
         "cliente_id": "99656887J",
         "transportista_id": "78787855S",
@@ -92,9 +80,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a4301ca77e4bce1b375c5b"
-        },
         "servicio_id": "S67890",
         "cliente_id": "12345678A",
         "transportista_id": "55236987J",
@@ -115,9 +100,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a4301ca77e4bce1b375c5c"
-        },
         "servicio_id": "S78901",
         "cliente_id": "98765432B",
         "transportista_id": "63326548T",
@@ -138,9 +120,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a4301ca77e4bce1b375c5d"
-        },
         "servicio_id": "S89012",
         "cliente_id": "11223344C",
         "transportista_id": "3965325B",
@@ -161,9 +140,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a4301ca77e4bce1b375c5e"
-        },
         "servicio_id": "S90123",
         "cliente_id": "55667788D",
         "transportista_id": "4965378B",
@@ -184,9 +160,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a4301ca77e4bce1b375c5f"
-        },
         "servicio_id": "S12345",
         "cliente_id": "78901234E",
         "transportista_id": "89636565X",
@@ -207,9 +180,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a4301ca77e4bce1b375c60"
-        },
         "servicio_id": "S28451",
         "cliente_id": "34567890F",
         "transportista_id": "96987414M",

@@ -1,8 +1,5 @@
 [
     {
-        "_id": {
-            "$oid": "65a3f511a77e4bce1b375c43"
-        },
         "cliente_id": "12998675L",
         "nombre": "Rodrigo",
         "apellido": "Mendoza",
@@ -13,7 +10,6 @@
             "codigoPostal": "08022"
         },
         "email": "rodrigomendoza@gmail.com",
-        "contraseña": "12111114",
         "metodoDePago": {
             "targeta": {
                 "nombreDelTitular": "Rodrigo Mendoza",
@@ -26,9 +22,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a3f511a77e4bce1b375c44"
-        },
         "cliente_id": "99656887J",
         "nombre": "Victor",
         "apellido": "Arroyo",
@@ -39,7 +32,6 @@
             "codigoPostal": "08052"
         },
         "email": "vitorarr@gmail.com",
-        "contraseña": "12111114",
         "metodoDePago": {
             "targeta": {
                 "nombreDelTitular": "Victor Arroyo",
@@ -52,9 +44,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a3f511a77e4bce1b375c45"
-        },
         "cliente_id": "49656456A",
         "nombre": "Laura",
         "apellido": "González",
@@ -65,7 +54,6 @@
             "codigoPostal": "08036"
         },
         "email": "lauragonz@gmail.com",
-        "contraseña": "p@ssw0rd",
         "metodoDePago": {
             "tarjeta": {
                 "nombreDelTitular": "Laura González",
@@ -78,9 +66,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a3f511a77e4bce1b375c46"
-        },
         "cliente_id": "99656887J",
         "nombre": "Carlos",
         "apellido": "Martínez",
@@ -91,7 +76,6 @@
             "codigoPostal": "08020"
         },
         "email": "carlosmart@gmail.com",
-        "contraseña": "securePWD",
         "metodoDePago": {
             "tarjeta": {
                 "nombreDelTitular": "Carlos Martínez",
@@ -104,9 +88,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a3f511a77e4bce1b375c47"
-        },
         "cliente_id": "12345678A",
         "nombre": "Ana",
         "apellido": "Rodríguez",
@@ -117,7 +98,6 @@
             "codigoPostal": "08010"
         },
         "email": "ana.rodriguez@example.com",
-        "contraseña": "secure123",
         "metodoDePago": {
             "tarjeta": {
                 "nombreDelTitular": "Ana Rodríguez",
@@ -130,9 +110,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a3f511a77e4bce1b375c48"
-        },
         "cliente_id": "98765432B",
         "nombre": "Pedro",
         "apellido": "Sánchez",
@@ -143,7 +120,6 @@
             "codigoPostal": "08002"
         },
         "email": "pedro.sanchez@example.com",
-        "contraseña": "pass1234",
         "metodoDePago": {
             "tarjeta": {
                 "nombreDelTitular": "Pedro Sánchez",
@@ -156,9 +132,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a3f511a77e4bce1b375c49"
-        },
         "cliente_id": "11223344C",
         "nombre": "María",
         "apellido": "López",
@@ -169,7 +142,6 @@
             "codigoPostal": "08007"
         },
         "email": "maria.lopez@example.com",
-        "contraseña": "p@ssW0rd",
         "metodoDePago": {
             "tarjeta": {
                 "nombreDelTitular": "María López",
@@ -182,9 +154,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a3f511a77e4bce1b375c4a"
-        },
         "cliente_id": "55667788D",
         "nombre": "Alejandro",
         "apellido": "García",
@@ -195,7 +164,6 @@
             "codigoPostal": "08019"
         },
         "email": "alejandro.garcia@example.com",
-        "contraseña": "securePWD456",
         "metodoDePago": {
             "tarjeta": {
                 "nombreDelTitular": "Alejandro García",
@@ -208,9 +176,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a3f511a77e4bce1b375c4b"
-        },
         "cliente_id": "78901234E",
         "nombre": "Isabel",
         "apellido": "Martínez",
@@ -221,7 +186,6 @@
             "codigoPostal": "08029"
         },
         "email": "isabel.martinez@example.com",
-        "contraseña": "mySecurePass",
         "metodoDePago": {
             "tarjeta": {
                 "nombreDelTitular": "Isabel Martínez",
@@ -234,9 +198,6 @@
         }
     },
     {
-        "_id": {
-            "$oid": "65a3f511a77e4bce1b375c4c"
-        },
         "cliente_id": "34567890F",
         "nombre": "Javier",
         "apellido": "Hernández",
@@ -247,7 +208,6 @@
             "codigoPostal": "08007"
         },
         "email": "javier.hernandez@example.com",
-        "contraseña": "securePass123",
         "metodoDePago": {
             "tarjeta": {
                 "nombreDelTitular": "Javier Hernández",
